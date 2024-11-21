@@ -168,6 +168,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     .then((response) => {
       alert("Message sent successfully!");
       console.log("SUCCESS!", response.status, response.text);
+      window.location.reload()
     }, (error) => {
       alert("Failed to send message. Please try again later.");
       console.error("FAILED...", error);
